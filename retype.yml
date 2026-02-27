@@ -1,0 +1,45 @@
+input: src
+output: .retype
+url: https://docs.telefon1c.ru/v5/
+
+start.pro: true
+
+gravatar:
+    default: monsterid
+    enabled: true
+
+branding:
+  title: МИКО
+  label: wiki v5
+
+links:
+  - text: MikoPBX
+    link: https://www.mikopbx.ru
+    target: blank
+  - text: telefon.miko.ru
+    link: https://telefon.miko.ru
+    target: blank
+  - text: Купить
+    link: https://telefon.miko.ru/price/
+    target: blank
+meta:
+  title: " | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии"
+
+search:
+  placeholder: Поиск
+  noResultsFoundMsg: Ничего не нашли по вашему запросу
+
+edit:
+  repo: "https://github.com/telefon1c/wiki-v5/edit/"
+  base: /src
+  branch: master
+  label: Редактировать в GitHub
+
+integrations:
+  googleAnalytics:
+    id: UA-8336599-8
+  googleTagManager:
+    id: GTM-KXBHF8J
+
+footer:
+  copyright: "&copy; {{ year }} [МИКО](https://www.miko.ru/) . Все права защищены."
