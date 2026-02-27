@@ -27,6 +27,10 @@ jobs:
         with:
           license: ${{ secrets.RETYPE_SECRET }}
 
+      # Copy Retype output to .retype/ for Docker build
+      - name: Copy Retype output
+        run: cp -r "$RETYPE_OUTPUT_PATH" .retype
+
       # Upload assets to Yandex Object Storage
       - name: Install s3cmd
         run: pip install s3cmd
