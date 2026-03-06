@@ -29,6 +29,25 @@ search:
   placeholder: Поиск
   noResultsFoundMsg: Ничего не нашли по вашему запросу
 
+toc:
+  label: Содержимое
+
+nav:
+  mode: stack
+
+nextprev:
+  mode: hide
+
+outbound:
+  enabled: false
+
+showSidebarFilter: false
+
+backlinks:
+  enabled: true
+  title: "Связанные статьи"
+  maxResults: 8
+
 edit:
   repo: "https://github.com/telefon1c/wiki-v5/edit/"
   base: /src
