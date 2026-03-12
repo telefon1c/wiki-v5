@@ -23,6 +23,35 @@
     }
 }
 
+/* Стиль шапки */
+#retype-header .border-base-border {
+    border: none;
+}
+
+/* Стиль бокового меню */
+.sidebar {
+    border-radius: 2rem;
+    border-width: 1rem;
+}
+
+#retype-container {
+    background-color: var(--base-bg);
+}
+
+.simplebar-content {
+    padding-right: 12px !important;
+}
+
+/* Стиль элементов бокового меню */
+li > div.rounded-l-lg {
+    border-bottom-right-radius: var(--radius-lg);
+    border-top-right-radius: var(--radius-lg);
+}
+
+/* Стиль содержимого текущей страницы */
+.border-sidebar-right-border {
+    border: none;
+}
 
 /* Стиль для картинок с тенью */
 img.miko-art {
@@ -33,8 +62,14 @@ img.miko-art {
     border: 1px solid #d1d5db;
 }
 
+/* Титульная картинка */
 img.miko-title {
     border-radius: 24px;
+}
+
+/* Скроем дублирование image-alt */
+figcaption {
+    display: none;
 }
 
 /*Запрет переноса выделенных блоков по словам*/
@@ -58,11 +93,13 @@ img.miko-title {
     margin-right: 12px;
 }
 
+/* Выравнивание иконок внутри текста инструкции */
 .miko-man svg {
     vertical-align: middle;
     width: 1em;
 }
 
+/* Для флажков в таблице сравнения */
 .green svg {
     color: green;
 }

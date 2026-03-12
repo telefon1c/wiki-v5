@@ -34,6 +34,8 @@ toc:
 
 nav:
   mode: stack
+  icons:
+    mode: none
 
 nextprev:
   mode: hide
@@ -48,11 +50,25 @@ backlinks:
   title: "Связанные статьи"
   maxResults: 8
 
+theme:
+  base:
+    base-color: "#346ddb"
+    nav-item-text: "#4f5358"
+    sidebar-left-bg: "#f9fafb"
+    sidebar-left-border: "var(--base-bg)"
+    nav-item-border-active: "none"
+  dark:
+    sidebar-left-bg: "#020202"
+    sidebar-left-border: "var(--base-bg)"
+
 edit:
   repo: "https://github.com/telefon1c/wiki-v5/edit/"
   base: /src
   branch: master
   label: Редактировать в GitHub
+
+editor:
+  enabled: false
 
 integrations:
   googleAnalytics:
