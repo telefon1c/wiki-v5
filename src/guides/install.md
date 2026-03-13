@@ -1,6 +1,5 @@
 ---
 label: Установка
-icon: desktop-download
 order: -3
 backlinks:
   enabled: false
@@ -20,9 +19,9 @@ backlinks:
 
 >>> Откройте обработку в 1С
 {.miko-man}
-Нажмите кнопку [!badge icon="../assets/icons/ones_menu_down.svg" variant="secondary"] и выберите команду
-[!badge Файл|secondary] :icon-chevron-right: [!badge Открыть|secondary] или нажмите клавиши
-[!badge Ctrl|secondary] + [!badge O|secondary]. В открывшемся окне укажите путь к скаченному файлу.
+Нажмите кнопку [!badge icon="../assets/icons/ones_menu_down.svg"] и выберите команду
+[!badge Файл] :icon-chevron-right: [!badge Открыть] или нажмите клавиши
+[!badge Ctrl] + [!badge O]. В открывшемся окне укажите путь к скаченному файлу.
 Обработка проверит конфигурацию и выдаст список подходящих расширений.
 
 >>> Установите расширение
@@ -38,37 +37,34 @@ backlinks:
 
 ### Способ 1 (установка на IP-АТС)
 
-Ниже приведены варианты установки для двух IP-АТС:
-[MIKOPBX](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8F-%D0%BD%D0%B0-mikopbx)
-и
-[FreePBX](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8F-%D0%BD%D0%B0-freepbx).
-Выбирайте подходящую для вас инструкцию.
+Ниже приведены варианты установки для двух IP-АТС: [MIKOPBX](#установка-модуля-на-mikopbx) и
+[FreePBX](#установка-модуля-на-freepbx). Выбирайте подходящую для вас инструкцию.
 
 #### Установка модуля на MIKOPBX
 
 >>> Подключите маркетплейс
 {.miko-man}
 Если вы впервые открываете раздел маркетплейса в MIKOPBX, то потребуется пройти регистрацию нового пользователя.
-Откройте раздел [!badge Модули|secondary] :icon-chevron-right: [!badge Маркетплейс модулей|secondary].
+Откройте раздел [!badge Модули] :icon-chevron-right: [!badge Маркетплейс модулей].
 Если у вас уже есть **лицензионный ключ**, его можно указать в соответствующем поле. Если ключа нет,
 заполните форму регистрации, указав название организации и свои контактные данные.
 После чего вы получите новый лицензионный ключ с триалом на **14** дней.
 
 >>> Установите модуль
-На вкладке [!badge Маркетплейс|secondary] найдите и установите [!badge Панель телефонии 5.0 для 1С|secondary].
-После установки модуль появится на вкладке [!badge Установленные модули|secondary].
+На вкладке [!badge Маркетплейс] найдите и установите [!badge Панель телефонии 5.0 для 1С].
+После установки модуль появится на вкладке [!badge Установленные модули].
 >>>
 
 #### Установка модуля на FreePBX
 
 >>> Откройте раздел установки модулей
 {.miko-man}
-Выберите команду [!badge Admin|secondary] :icon-chevron-right: [!badge Module Admin|secondary].
-Далее нажмите кнопку [!badge Upload modules|secondary].
+Выберите команду [!badge Admin] :icon-chevron-right: [!badge Module Admin].
+Далее нажмите кнопку [!badge Upload modules].
 
 >>> Загрузите модуль
-В поле [!badge Download remote module|secondary] вставьте нижеприведенную ссылку и нажмите кнопку
-[!badge Download|secondary].
+В поле [!badge Download remote module] вставьте нижеприведенную ссылку и нажмите кнопку
+[!badge Download].
 ```html
 https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/latest.tgz
 ```
@@ -90,31 +86,31 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/late
 
 >>> Откройте настройки подключения
 {.miko-man}
-В панели разделов выберете
-[!badge Контакт-центр|secondary] :icon-chevron-right: [!badge Настройки|secondary] :icon-chevron-right: [!badge Настройки контакт-центра|secondary].
-Далее [!badge Сервер интеграции|secondary] :icon-chevron-right: [!badge Настройки подключения|secondary].
+В панели разделов выберите
+[!badge Контакт-центр] :icon-chevron-right: [!badge Настройки] :icon-chevron-right: [!badge Настройки контакт-центра].
+Далее [!badge Сервер интеграции] :icon-chevron-right: [!badge Настройки подключения].
 На экране появится мастер настройки подключения.
 
 ![](../assets/images/guides/new-connection-setup.png){.miko-art}
 
 >>> Установите модуль
 
-Нажмите кнопку [!badge Установить модуль|secondary] и дождитесь окончанию его установки.
+Нажмите кнопку [!badge Установить модуль] и дождитесь окончанию его установки.
 Модуль будет установлен на текущем компьютере как служба Windows.
 Во время установки могут несколько раз появляться уведомления от системы,
-на которые нужно отвечать [!badge Да|secondary].
+на которые нужно отвечать [!badge Да].
 
 ![](../assets/images/guides/system-alert.png){.miko-art}
 
-По окончанию установки нажмите [!badge Далее|secondary].
+По окончанию установки нажмите [!badge Далее].
 
 >>> Выберите режима соединения
 На этом этапе нужно решить, какой тип соединения лучше подходит под вашу организацию сети. Подробно об этом
 описано в разделе [архитектуры](architecture.md).
- - Если long-poll, тогда нажмите кнопку [!badge Использовать онлайн-обмен|secondary].
+ - Если long-poll, тогда нажмите кнопку [!badge Использовать онлайн-обмен].
  - Если веб-сервер, тогда укажите параметры публикации информационной базы и
-нажмите кнопку [!badge Использовать веб-сервер|secondary].
+нажмите кнопку [!badge Использовать веб-сервер].
 
-Для завершения установки нажмите кнопку [!badge Завершить|secondary].
+Для завершения установки нажмите кнопку [!badge Завершить].
 >>>
 

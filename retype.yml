@@ -57,6 +57,8 @@ theme:
     sidebar-left-bg: "#f9fafb"
     sidebar-left-border: "var(--base-bg)"
     nav-item-border-active: "none"
+    badge-primary: "var(--badge-secondary)"
+    badge-primary-text: "var(--badge-secondary-text)"
   dark:
     sidebar-left-bg: "#020202"
     sidebar-left-border: "var(--base-bg)"
