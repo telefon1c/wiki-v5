@@ -53,13 +53,23 @@ li > div.rounded-l-lg {
     border: none;
 }
 
+/* Скроем второй заголовок в карточке */
+.text-card-title-text {
+    display: none;
+}
+
+/* Ещё более компактная карточка */
+.miko-dense-card + .card-compact-group{
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
 /* Стиль для картинок с тенью */
 img.miko-art {
     border-radius: 6px;
     -webkit-box-shadow: 0 0 20px #ccc;
     -moz-box-shadow: 0 0 20px #ccc;
     box-shadow: 0 0 20px #ccc;
-    border: 1px solid #d1d5db;
+    outline: 1px solid #d1d5db;
 }
 
 /* Титульная картинка */
@@ -106,4 +116,8 @@ figcaption {
 
 .blue svg {
     color: #49B2ED;
+}
+
+.rotate90 svg {
+    transform: rotate(90deg);
 }
