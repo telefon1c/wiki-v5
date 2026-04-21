@@ -16,7 +16,7 @@ backlinks:
 
 >>> Скачайте установщик расширений
 Это внешняя обработка для 1С, которая поможет скачать правильное расширение под вашу конфигурацию.
-[!file Установщий расщирений.epf](https://releases.mikopbx.com/releases/v1/1c/getModuleFile/PT40_Installer/latest)
+[!file Установщик расщирений.epf](https://releases.mikopbx.com/releases/v1/1c/getModuleFile/PT50_Installer/latest)
 
 >>> Откройте обработку в 1С
 {.miko-man}
