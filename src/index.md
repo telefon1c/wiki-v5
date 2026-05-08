@@ -7,8 +7,10 @@ label: Введение
 почту в едином интерфейсе. Решение помогает встроить коммуникации с клиентами в рабочие процессы компании:
 хранить историю обращений, распределять ответственность между сотрудниками и контролировать качество обработки.
 
+:::card-no-title
 [!card layout="vertical" image="assets/images/rocket-back.png" kicker="Первоначальная настройка" text="Инструкции для быстрого старта"](guides/get-started.md)
 [!card layout="vertical" image="assets/images/youtube-back.png" kicker="Видео инструкции" text="Видео на нашем канале в Rutube"](https://rutube.ru/u/miko/)
+:::
 
 {.miko-dense-card}
 [!card layout="compact" text="Подключение мессенджеров MAX, Telegram, WhatsApp и другое"](administration/channels.md)

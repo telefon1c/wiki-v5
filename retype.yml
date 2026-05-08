@@ -70,6 +70,8 @@ theme:
     nav-item-border-active: "none"
     badge-primary: "var(--badge-secondary)"
     badge-primary-text: "var(--badge-secondary-text)"
+    card-title-font-size-md: "1rem"
+    card-title-font-weight: 700
   dark:
     sidebar-left-bg: "#020202"
     sidebar-left-border: "var(--base-bg)"

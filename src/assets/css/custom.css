@@ -54,7 +54,7 @@ li > div.rounded-l-lg {
 }
 
 /* Скроем второй заголовок в карточке */
-.text-card-title-text {
+.card-no-title .text-card-title-text {
     display: none;
 }
 
@@ -115,9 +115,161 @@ figcaption {
 }
 
 .blue svg {
-    color: #49B2ED;
+    color: #49b2ed;
 }
 
 .rotate90 svg {
     transform: rotate(90deg);
+}
+
+.no-pointer {
+    pointer-events: none;
+    cursor: text;
+}
+
+.object-fit-none img {
+    object-fit: none;
+}
+
+/* Более компактное оформление карточки */
+.card-vert-dense .p-card-padding {
+    padding: 1.25rem;
+}
+
+.card-vert-dense .text-card-description-text {
+    margin-bottom: 0 !important;
+    line-height: 1.45;
+}
+
+.card-vert-dense .text-card-title {
+    margin-top: 0;
+}
+
+.card-container-white .card-signal,.card-vert-body {
+    background-color: #ffffff;
+}
+
+.miko-tour-section {
+    margin: 1.5rem 0 2rem;
+    padding: clamp(1.25rem, 3vw, 2.5rem);
+    border-radius: 18px;
+}
+
+.miko-tour-section > h2:first-child {
+    margin-top: 0;
+}
+
+.miko-tour-section > :last-child {
+    margin-bottom: 0;
+}
+
+.miko-tour-subsection {
+    margin: 1.5rem 0;
+    padding: clamp(1rem, 2vw, 1.75rem);
+    border-radius: 14px;
+}
+
+.miko-tour-subsection > h3:first-child {
+    margin-top: 0;
+    font-size: 1.15rem;
+}
+
+.miko-tour-subsection > :last-child {
+    margin-bottom: 0;
+}
+
+.miko-tour-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.25rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.miko-tour-feature {
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #dce3ea;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(37, 49, 64, 0.06);
+}
+
+.miko-tour-feature__media {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16 / 10;
+    padding: 1.25rem 1.25rem 0;
+    background: #eef4f8;
+}
+
+.miko-tour-feature__media::before {
+    content: "";
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    bottom: 0;
+    left: 1.25rem;
+    background: #ffffff;
+    border: 1px solid #dce3ea;
+    border-bottom: 0;
+    border-radius: 12px 12px 0 0;
+    box-shadow: none;
+}
+
+.miko-tour-feature__media img {
+    position: relative;
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: calc(100% - 0.5rem);
+    max-height: calc(100% - 0.5rem);
+    border-radius: 6px;
+}
+
+.miko-tour-feature__media--bottom {
+    align-items: flex-end;
+    padding-bottom: 0;
+}
+
+.miko-tour-feature__media--bottom img {
+    max-height: calc(100% - 0.25rem);
+    border-radius: 6px 6px 0 0;
+}
+
+.miko-tour-feature__media--bottom + .miko-tour-feature__title {
+    margin-top: -0.85rem;
+}
+
+.miko-tour-feature__title {
+    position: relative;
+    z-index: 1;
+    margin: -0.25rem 0 0;
+    padding: 1rem 1rem 0.4rem;
+    background: #ffffff;
+    box-shadow: 0 -10px 18px rgba(37, 49, 64, 0.08);
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0;
+}
+
+.miko-tour-feature p {
+    margin: 0;
+    padding: 0 1rem 1.15rem;
+    background: #ffffff;
+    color: #4f5b67;
+    line-height: 1.5;
+}
+
+.background-mist {
+    background-color: #f4f7f8;
+}
+
+.background-yellow {
+    background-color: #feebbc;
+}
+
+.background-blue {
+    background-color: #d2e4fb;
 }
