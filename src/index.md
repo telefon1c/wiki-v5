@@ -8,8 +8,8 @@ label: Введение
 хранить историю обращений, распределять ответственность между сотрудниками и контролировать качество обработки.
 
 :::card-no-title
-[!card layout="vertical" image="assets/images/rocket-back.png" kicker="Первоначальная настройка" text="Инструкции для быстрого старта"](guides/get-started.md)
-[!card layout="vertical" image="assets/images/youtube-back.png" kicker="Видео инструкции" text="Видео на нашем канале в Rutube"](https://rutube.ru/u/miko/)
+[!card layout="vertical" image="assets/images/title-image.png" kicker="Первоначальная настройка" text="Инструкции для быстрого старта"](guides/get-started.md)
+[!card layout="vertical" image="assets/images/overview/overview-title-image.png" kicker="Возможности продукта" text="Что умеет контакт-центр и как устроена работа с обращениями"](overview.md)
 :::
 
 {.miko-dense-card}
@@ -20,5 +20,8 @@ label: Введение
 %% Скроем раздел FAQ пока в нем нет подходящих инструкций  
 [!card layout="compact" text="Проверьте, нет ли ответа в этом разделе"](faq.md)
 %%
+
+{.miko-dense-card}
+[!card layout="compact" title="Видео инструкции" text="Видео на нашем канале в Rutube" icon="video"](https://rutube.ru/u/miko/)
 [!card layout="compact" title="Поддержка" text="Свяжитесь с нашим отделом технической поддержки" icon="mail"](https://telefon.miko.ru/contacts/)
 [!card layout="compact" title="Форум" text="Задайте свой вопрос на форуме" icon="comment-discussion"](https://telefon.miko.ru/forum/)
