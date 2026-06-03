@@ -76,10 +76,10 @@ li > div.rounded-l-lg {
 /* Стиль для картинок с тенью */
 img.miko-art {
     border-radius: 6px;
-    -webkit-box-shadow: 0 0 20px #ccc;
-    -moz-box-shadow: 0 0 20px #ccc;
-    box-shadow: 0 0 20px #ccc;
-    outline: 1px solid #d1d5db;
+    -webkit-box-shadow: 0 0 20px var(--miko-art-shadow, #ccc);
+    -moz-box-shadow: 0 0 20px var(--miko-art-shadow, #ccc);
+    box-shadow: 0 0 20px var(--miko-art-shadow, #ccc);
+    outline: 1px solid var(--miko-art-border, #d1d5db);
 }
 
 /* Титульная картинка */
@@ -155,18 +155,71 @@ figcaption {
     margin-top: 0;
 }
 
+:root {
+    --miko-art-shadow: #ccc;
+    --miko-art-border: #d1d5db;
+    --miko-tour-text: #324152;
+    --miko-tour-title: #172033;
+    --miko-tour-muted: #4f5b67;
+    --miko-tour-card-bg: #ffffff;
+    --miko-tour-card-border: #dce3ea;
+    --miko-tour-card-shadow: 0 3px 10px rgba(37, 49, 64, 0.06);
+    --miko-tour-card-title-shadow: 0 -10px 18px rgba(37, 49, 64, 0.08);
+    --miko-tour-media-bg: #eef4f8;
+    --miko-tour-media-inner-bg: #ffffff;
+    --miko-tour-panel-border: transparent;
+    --miko-tour-mist-bg: #f4f7f8;
+    --miko-tour-yellow-bg: #feebbc;
+    --miko-tour-blue-bg: #d2e4fb;
+}
+
+html.dark {
+    --miko-art-shadow: rgba(0, 0, 0, 0.45);
+    --miko-art-border: #2b3648;
+    --miko-tour-text: #d8e1ed;
+    --miko-tour-title: #f8fafc;
+    --miko-tour-muted: #b7c2d2;
+    --miko-tour-card-bg: #111827;
+    --miko-tour-card-border: #2b3648;
+    --miko-tour-card-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+    --miko-tour-card-title-shadow: 0 -10px 18px rgba(0, 0, 0, 0.22);
+    --miko-tour-media-bg: #182233;
+    --miko-tour-media-inner-bg: #0b1220;
+    --miko-tour-panel-border: rgba(148, 163, 184, 0.18);
+    --miko-tour-mist-bg: #111827;
+    --miko-tour-yellow-bg: #302817;
+    --miko-tour-blue-bg: #10243f;
+}
+
 .card-container-white .card-signal,.card-vert-body {
-    background-color: #ffffff;
+    background-color: var(--miko-tour-card-bg);
+    border-color: var(--miko-tour-card-border);
+}
+
+.card-container-white .card-signal .card-signal-title {
+    color: var(--miko-tour-title);
+}
+
+.card-container-white .card-signal p.card-signal-description {
+    color: var(--miko-tour-muted);
 }
 
 .miko-tour-section {
     margin: 1.5rem 0 2rem;
     padding: clamp(1.25rem, 3vw, 2.5rem);
+    color: var(--miko-tour-text);
+    border: 1px solid var(--miko-tour-panel-border);
     border-radius: 18px;
 }
 
 .miko-tour-section > h2:first-child {
     margin-top: 0;
+    color: var(--miko-tour-title);
+}
+
+.miko-tour-section p,
+.miko-tour-section li {
+    color: var(--miko-tour-text);
 }
 
 .miko-tour-section > :last-child {
@@ -176,12 +229,20 @@ figcaption {
 .miko-tour-subsection {
     margin: 1.5rem 0;
     padding: clamp(1rem, 2vw, 1.75rem);
+    color: var(--miko-tour-text);
+    border: 1px solid var(--miko-tour-panel-border);
     border-radius: 14px;
 }
 
 .miko-tour-subsection > h3:first-child {
     margin-top: 0;
+    color: var(--miko-tour-title);
     font-size: 1.15rem;
+}
+
+.miko-tour-subsection p,
+.miko-tour-subsection li {
+    color: var(--miko-tour-text);
 }
 
 .miko-tour-subsection > :last-child {
@@ -197,10 +258,10 @@ figcaption {
 
 .miko-tour-feature {
     overflow: hidden;
-    background: #ffffff;
-    border: 1px solid #dce3ea;
+    background: var(--miko-tour-card-bg);
+    border: 1px solid var(--miko-tour-card-border);
     border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(37, 49, 64, 0.06);
+    box-shadow: var(--miko-tour-card-shadow);
 }
 
 .miko-tour-feature__media {
@@ -210,7 +271,7 @@ figcaption {
     justify-content: center;
     aspect-ratio: 16 / 10;
     padding: 1.25rem 1.25rem 0;
-    background: #eef4f8;
+    background: var(--miko-tour-media-bg);
 }
 
 .miko-tour-feature__media::before {
@@ -220,8 +281,8 @@ figcaption {
     right: 1.25rem;
     bottom: 0;
     left: 1.25rem;
-    background: #ffffff;
-    border: 1px solid #dce3ea;
+    background: var(--miko-tour-media-inner-bg);
+    border: 1px solid var(--miko-tour-card-border);
     border-bottom: 0;
     border-radius: 12px 12px 0 0;
     box-shadow: none;
@@ -256,8 +317,9 @@ figcaption {
     z-index: 1;
     margin: -0.25rem 0 0;
     padding: 1rem 1rem 0.4rem;
-    background: #ffffff;
-    box-shadow: 0 -10px 18px rgba(37, 49, 64, 0.08);
+    background: var(--miko-tour-card-bg);
+    box-shadow: var(--miko-tour-card-title-shadow);
+    color: var(--miko-tour-title);
     font-size: 0.95rem;
     font-weight: 700;
     line-height: 1.25;
@@ -267,19 +329,19 @@ figcaption {
 .miko-tour-feature p {
     margin: 0;
     padding: 0 1rem 1.15rem;
-    background: #ffffff;
-    color: #4f5b67;
+    background: var(--miko-tour-card-bg);
+    color: var(--miko-tour-muted);
     line-height: 1.5;
 }
 
 .background-mist {
-    background-color: #f4f7f8;
+    background-color: var(--miko-tour-mist-bg);
 }
 
 .background-yellow {
-    background-color: #feebbc;
+    background-color: var(--miko-tour-yellow-bg);
 }
 
 .background-blue {
-    background-color: #d2e4fb;
+    background-color: var(--miko-tour-blue-bg);
 }
