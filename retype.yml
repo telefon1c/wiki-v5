@@ -85,11 +85,5 @@ edit:
 editor:
   enabled: false
 
-integrations:
-  googleAnalytics:
-    id: UA-8336599-8
-  googleTagManager:
-    id: GTM-KXBHF8J
-
 footer:
   copyright: "&copy; {{ year }} [МИКО](https://www.miko.ru/). Все права защищены."
