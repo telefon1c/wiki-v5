@@ -8,7 +8,7 @@ label: Введение
 хранить историю обращений, распределять ответственность между сотрудниками и контролировать качество обработки.
 
 :::card-no-title
-[!card layout="vertical" image="assets/images/title-image.png" kicker="Первоначальная настройка" text="Инструкции для быстрого старта"](guides/get-started.md)
+[!card layout="vertical" image="assets/images/guides/title-image.png" kicker="Первоначальная настройка" text="Инструкции для быстрого старта"](guides/get-started.md)
 [!card layout="vertical" image="assets/images/overview/overview-title-image.png" kicker="Возможности продукта" text="Что умеет контакт-центр и как устроена работа с обращениями"](overview.md)
 :::
 

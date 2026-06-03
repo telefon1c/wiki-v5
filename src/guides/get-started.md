@@ -6,7 +6,7 @@ backlinks:
   enabled: false
 ---
 
-![МИКО: Контакт-центр](../assets/images/title-image.png){.miko-title}
+![МИКО: Контакт-центр](../assets/images/guides/title-image.png){.miko-title}
 
 В данном разделе указаны действия, которые потребуется выполнить, прежде чем можно будет переходить к
 настройке других параметров.
